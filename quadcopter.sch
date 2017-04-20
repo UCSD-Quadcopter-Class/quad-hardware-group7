@@ -3591,7 +3591,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="R2" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-100" value="100"/>
 <part name="R3" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-10K" value="10K"/>
 <part name="C7" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
-<part name="D1" library="quadparts-nick" deviceset="RED_LED" device=""/>
+<part name="D1" library="quadparts-nick" deviceset="RED_LED" device="" value="RED"/>
 <part name="U$1" library="quadparts_prebuilt" deviceset="MOTOR_PADS" device=""/>
 <part name="P+1" library="quadparts_prebuilt" deviceset="VCC" device=""/>
 <part name="C8" library="quadparts_prebuilt" deviceset="CAPACITOR-POL_" device="SMD-7043-D_TANTALUM-220UF" value="220uF"/>
@@ -3600,7 +3600,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="R4" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-100" value="100"/>
 <part name="R7" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-10K" value="10K"/>
 <part name="C10" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
-<part name="D2" library="quadparts-nick" deviceset="RED_LED" device=""/>
+<part name="D2" library="quadparts-nick" deviceset="RED_LED" device="" value="RED"/>
 <part name="U$2" library="quadparts_prebuilt" deviceset="MOTOR_PADS" device=""/>
 <part name="P+2" library="quadparts_prebuilt" deviceset="VCC" device=""/>
 <part name="C12" library="quadparts_prebuilt" deviceset="CAPACITOR-POL_" device="SMD-7043-D_TANTALUM-220UF" value="220uF"/>
@@ -3609,7 +3609,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="R8" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-100" value="100"/>
 <part name="R9" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-10K" value="10K"/>
 <part name="C13" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
-<part name="D3" library="quadparts-nick" deviceset="RED_LED" device=""/>
+<part name="D3" library="quadparts-nick" deviceset="RED_LED" device="" value="RED"/>
 <part name="U$3" library="quadparts_prebuilt" deviceset="MOTOR_PADS" device=""/>
 <part name="P+3" library="quadparts_prebuilt" deviceset="VCC" device=""/>
 <part name="C14" library="quadparts_prebuilt" deviceset="CAPACITOR-POL_" device="SMD-7043-D_TANTALUM-220UF" value="220uF"/>
@@ -3618,7 +3618,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="R10" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-100" value="100"/>
 <part name="R11" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-10K" value="10K"/>
 <part name="C16" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
-<part name="D4" library="quadparts-nick" deviceset="RED_LED" device=""/>
+<part name="D4" library="quadparts-nick" deviceset="RED_LED" device="" value="RED"/>
 <part name="U$4" library="quadparts_prebuilt" deviceset="MOTOR_PADS" device=""/>
 <part name="P+4" library="quadparts_prebuilt" deviceset="VCC" device=""/>
 <part name="C17" library="quadparts_prebuilt" deviceset="CAPACITOR-POL_" device="SMD-7043-D_TANTALUM-220UF" value="220uF"/>
@@ -4185,6 +4185,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <junction x="165.1" y="-53.34"/>
 <wire x1="165.1" y1="-53.34" x2="165.1" y2="-55.88" width="0.1524" layer="91"/>
 <junction x="165.1" y="-55.88"/>
+<junction x="154.94" y="-17.78"/>
 </segment>
 <segment>
 <pinref part="V_REG" gate="G$1" pin="OUT"/>
@@ -4276,6 +4277,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <wire x1="-12.7" y1="-83.82" x2="-7.62" y2="-83.82" width="0.1524" layer="91"/>
 <wire x1="-7.62" y1="-83.82" x2="-5.08" y2="-86.36" width="0.1524" layer="91"/>
 <label x="-5.08" y="-86.36" size="1.778" layer="95" xref="yes"/>
+<junction x="-12.7" y="-83.82"/>
 </segment>
 <segment>
 <pinref part="C15" gate="G$1" pin="1"/>
@@ -4601,6 +4603,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <junction x="-106.68" y="-213.36"/>
 <pinref part="GND19" gate="1" pin="BAT_GND"/>
 <wire x1="-127" y1="-213.36" x2="-139.7" y2="-213.36" width="0.1524" layer="91"/>
+<junction x="-127" y="-213.36"/>
 </segment>
 <segment>
 <pinref part="C13" gate="G$1" pin="2"/>
@@ -4710,6 +4713,16 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="106,1,-22.86,-81.28,RSTON,,,,,"/>
+<approved hash="113,1,6.87917,-50.8,Y1,,,,,"/>
+<approved hash="113,1,-90.551,-195.58,Q1,,,,,"/>
+<approved hash="113,1,-6.731,-195.58,Q2,,,,,"/>
+<approved hash="113,1,79.629,-195.58,Q3,,,,,"/>
+<approved hash="113,1,160.909,-195.58,Q4,,,,,"/>
+<approved hash="113,1,-115.375,6.985,J2,,,,,"/>
+<approved hash="113,1,9.525,49.3353,J3,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
