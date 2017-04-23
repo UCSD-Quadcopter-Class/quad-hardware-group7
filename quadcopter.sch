@@ -3632,6 +3632,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <technologies>
 <technology name="">
 <attribute name="CREATOR" value="John Wu" constant="no"/>
+<attribute name="DATASHEET" value="https://media.digikey.com/pdf/Data%20Sheets/Everlight%20PDFs/QTLP600C.pdf" constant="no"/>
 <attribute name="DISTR" value="Digikey" constant="no"/>
 <attribute name="DISTRPN" value="1080-1401-1-ND" constant="no"/>
 <attribute name="MFR" value="Everlight Electronics Co Ltd" constant="no"/>
@@ -3705,7 +3706,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="U$1" library="quadparts_prebuilt" deviceset="MOTOR_PADS" device=""/>
 <part name="P+1" library="quadparts_prebuilt" deviceset="VCC" device=""/>
 <part name="C8" library="quadparts_prebuilt" deviceset="CAPACITOR-POL_" device="SMD-7043-D_TANTALUM-220UF" value="220uF"/>
-<part name="GND20" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="Q2" library="quadparts-nick" deviceset="N-CHANNEL_MOSFET" device=""/>
 <part name="R4" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-100" value="100"/>
 <part name="R7" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-10K" value="10K"/>
@@ -3714,7 +3714,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="U$2" library="quadparts_prebuilt" deviceset="MOTOR_PADS" device=""/>
 <part name="P+2" library="quadparts_prebuilt" deviceset="VCC" device=""/>
 <part name="C12" library="quadparts_prebuilt" deviceset="CAPACITOR-POL_" device="SMD-7043-D_TANTALUM-220UF" value="220uF"/>
-<part name="GND22" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="Q3" library="quadparts-nick" deviceset="N-CHANNEL_MOSFET" device=""/>
 <part name="R8" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-100" value="100"/>
 <part name="R9" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-10K" value="10K"/>
@@ -3723,7 +3722,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="U$3" library="quadparts_prebuilt" deviceset="MOTOR_PADS" device=""/>
 <part name="P+3" library="quadparts_prebuilt" deviceset="VCC" device=""/>
 <part name="C14" library="quadparts_prebuilt" deviceset="CAPACITOR-POL_" device="SMD-7043-D_TANTALUM-220UF" value="220uF"/>
-<part name="GND24" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="Q4" library="quadparts-nick" deviceset="N-CHANNEL_MOSFET" device=""/>
 <part name="R10" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-100" value="100"/>
 <part name="R11" library="quadparts_prebuilt" deviceset="RESISTOR_" device="SMD-2012-0805-10K" value="10K"/>
@@ -3732,7 +3730,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="U$4" library="quadparts_prebuilt" deviceset="MOTOR_PADS" device=""/>
 <part name="P+4" library="quadparts_prebuilt" deviceset="VCC" device=""/>
 <part name="C17" library="quadparts_prebuilt" deviceset="CAPACITOR-POL_" device="SMD-7043-D_TANTALUM-220UF" value="220uF"/>
-<part name="GND26" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="IMU" library="quadparts-nick" deviceset="9-AXIS_IMU" device=""/>
 <part name="GND27" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="C18" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-0.01UF" value="0.01uF"/>
@@ -3768,9 +3765,12 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="GND39" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="P+12" library="quadparts_prebuilt" deviceset="VCC" device=""/>
 <part name="D5" library="LED" deviceset="BLUE_LED" device=""/>
-<part name="P+13" library="quadparts_prebuilt" deviceset="VCC" device=""/>
 <part name="GND40" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="FRAME1" library="quadparts_prebuilt" deviceset="FRAME_B_L" device=""/>
+<part name="GND20" library="quadparts_prebuilt" deviceset="BAT_GND" device=""/>
+<part name="GND22" library="quadparts_prebuilt" deviceset="BAT_GND" device=""/>
+<part name="GND24" library="quadparts_prebuilt" deviceset="BAT_GND" device=""/>
+<part name="GND26" library="quadparts_prebuilt" deviceset="BAT_GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3828,7 +3828,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <instance part="U$1" gate="G$1" x="-137.16" y="-165.1"/>
 <instance part="P+1" gate="VCC" x="-152.4" y="-142.24"/>
 <instance part="C8" gate="G$1" x="-152.4" y="-157.48"/>
-<instance part="GND20" gate="1" x="-152.4" y="-167.64"/>
 <instance part="Q2" gate="G$1" x="-60.96" y="-190.5" rot="R270"/>
 <instance part="R4" gate="G$1" x="-83.82" y="-190.5"/>
 <instance part="R7" gate="G$1" x="-73.66" y="-200.66" rot="R90"/>
@@ -3837,7 +3836,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <instance part="U$2" gate="G$1" x="-63.5" y="-165.1"/>
 <instance part="P+2" gate="VCC" x="-78.74" y="-142.24"/>
 <instance part="C12" gate="G$1" x="-78.74" y="-157.48"/>
-<instance part="GND22" gate="1" x="-78.74" y="-167.64"/>
 <instance part="Q3" gate="G$1" x="63.5" y="-170.18" rot="R270"/>
 <instance part="R8" gate="G$1" x="40.64" y="-170.18"/>
 <instance part="R9" gate="G$1" x="50.8" y="-180.34" rot="R90"/>
@@ -3846,7 +3844,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <instance part="U$3" gate="G$1" x="60.96" y="-144.78"/>
 <instance part="P+3" gate="VCC" x="45.72" y="-121.92"/>
 <instance part="C14" gate="G$1" x="45.72" y="-137.16"/>
-<instance part="GND24" gate="1" x="45.72" y="-147.32"/>
 <instance part="Q4" gate="G$1" x="177.8" y="-139.7" rot="R270"/>
 <instance part="R10" gate="G$1" x="154.94" y="-139.7"/>
 <instance part="R11" gate="G$1" x="165.1" y="-149.86" rot="R90"/>
@@ -3855,7 +3852,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <instance part="U$4" gate="G$1" x="175.26" y="-114.3"/>
 <instance part="P+4" gate="VCC" x="160.02" y="-91.44"/>
 <instance part="C17" gate="G$1" x="160.02" y="-106.68"/>
-<instance part="GND26" gate="1" x="160.02" y="-116.84"/>
 <instance part="IMU" gate="G$1" x="208.28" y="-38.1"/>
 <instance part="GND27" gate="1" x="218.44" y="-48.26"/>
 <instance part="C18" gate="G$1" x="198.12" y="5.08"/>
@@ -3890,11 +3886,14 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <instance part="GND38" gate="1" x="-76.2" y="7.62" rot="R270"/>
 <instance part="GND39" gate="1" x="-53.34" y="7.62" rot="R90"/>
 <instance part="P+12" gate="VCC" x="-10.16" y="38.1" rot="R270"/>
-<instance part="D5" gate="G$1" x="-152.4" y="-12.7"/>
-<instance part="P+13" gate="VCC" x="-172.72" y="-12.7" rot="R90"/>
-<instance part="GND40" gate="1" x="-139.7" y="-12.7" rot="R90"/>
+<instance part="D5" gate="G$1" x="-154.94" y="-12.7"/>
+<instance part="GND40" gate="1" x="-144.78" y="-17.78" rot="R90"/>
 <instance part="FRAME1" gate="G$1" x="-198.12" y="-220.98"/>
 <instance part="FRAME1" gate="G$2" x="127" y="-218.44"/>
+<instance part="GND20" gate="1" x="-152.4" y="-167.64"/>
+<instance part="GND22" gate="1" x="-78.74" y="-167.64"/>
+<instance part="GND24" gate="1" x="45.72" y="-147.32"/>
+<instance part="GND26" gate="1" x="160.02" y="-116.84"/>
 </instances>
 <busses>
 </busses>
@@ -4003,26 +4002,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <wire x1="-114.3" y1="-76.2" x2="-114.3" y2="-68.58" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="C8" gate="G$1" pin="-"/>
-<pinref part="GND20" gate="1" pin="GND"/>
-<wire x1="-152.4" y1="-162.56" x2="-152.4" y2="-165.1" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C12" gate="G$1" pin="-"/>
-<pinref part="GND22" gate="1" pin="GND"/>
-<wire x1="-78.74" y1="-162.56" x2="-78.74" y2="-165.1" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C14" gate="G$1" pin="-"/>
-<pinref part="GND24" gate="1" pin="GND"/>
-<wire x1="45.72" y1="-142.24" x2="45.72" y2="-144.78" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C17" gate="G$1" pin="-"/>
-<pinref part="GND26" gate="1" pin="GND"/>
-<wire x1="160.02" y1="-111.76" x2="160.02" y2="-114.3" width="0.1524" layer="91"/>
-</segment>
-<segment>
 <pinref part="GND27" gate="1" pin="GND"/>
 <wire x1="218.44" y1="-45.72" x2="218.44" y2="-35.56" width="0.1524" layer="91"/>
 <pinref part="IMU" gate="G$1" pin="GND@19"/>
@@ -4106,7 +4085,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <segment>
 <pinref part="D5" gate="G$1" pin="C"/>
 <pinref part="GND40" gate="1" pin="GND"/>
-<wire x1="-147.32" y1="-12.7" x2="-142.24" y2="-12.7" width="0.1524" layer="91"/>
+<wire x1="-149.86" y1="-12.7" x2="-147.32" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -4323,11 +4302,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <pinref part="J3" gate="G$1" pin="7"/>
 <pinref part="P+12" gate="VCC" pin="VCC"/>
 <wire x1="-30.48" y1="38.1" x2="-12.7" y2="38.1" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="P+13" gate="VCC" pin="VCC"/>
-<pinref part="D5" gate="G$1" pin="A"/>
-<wire x1="-170.18" y1="-12.7" x2="-162.56" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
@@ -4559,11 +4533,8 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </net>
 <net name="FLYBACK" class="0">
 <segment>
-<pinref part="Q1" gate="G$1" pin="S"/>
-<wire x1="-129.54" y1="-182.88" x2="-129.54" y2="-172.72" width="0.1524" layer="91"/>
 <wire x1="-129.54" y1="-172.72" x2="-157.48" y2="-172.72" width="0.1524" layer="91"/>
 <label x="-157.48" y="-172.72" size="1.778" layer="95" rot="R180" xref="yes"/>
-<junction x="-129.54" y="-172.72"/>
 <wire x1="-129.54" y1="-172.72" x2="-129.54" y2="-165.1" width="0.1524" layer="91"/>
 <pinref part="U$1" gate="G$1" pin="V-"/>
 <wire x1="-129.54" y1="-165.1" x2="-124.46" y2="-165.1" width="0.1524" layer="91"/>
@@ -4571,13 +4542,16 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <pinref part="D1" gate="G$1" pin="A"/>
 <wire x1="-124.46" y1="-170.18" x2="-114.3" y2="-170.18" width="0.1524" layer="91"/>
 <junction x="-129.54" y="-165.1"/>
+<wire x1="-129.54" y1="-172.72" x2="-116.84" y2="-172.72" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="-172.72" x2="-116.84" y2="-203.2" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="G$1" pin="D"/>
+<wire x1="-116.84" y1="-203.2" x2="-129.54" y2="-203.2" width="0.1524" layer="91"/>
+<wire x1="-129.54" y1="-203.2" x2="-129.54" y2="-198.12" width="0.1524" layer="91"/>
+<junction x="-129.54" y="-172.72"/>
 </segment>
 <segment>
-<pinref part="Q2" gate="G$1" pin="S"/>
-<wire x1="-55.88" y1="-182.88" x2="-55.88" y2="-172.72" width="0.1524" layer="91"/>
 <wire x1="-55.88" y1="-172.72" x2="-83.82" y2="-172.72" width="0.1524" layer="91"/>
 <label x="-83.82" y="-172.72" size="1.778" layer="95" rot="R180" xref="yes"/>
-<junction x="-55.88" y="-172.72"/>
 <wire x1="-55.88" y1="-172.72" x2="-55.88" y2="-165.1" width="0.1524" layer="91"/>
 <pinref part="U$2" gate="G$1" pin="V-"/>
 <wire x1="-55.88" y1="-165.1" x2="-50.8" y2="-165.1" width="0.1524" layer="91"/>
@@ -4585,13 +4559,16 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <pinref part="D2" gate="G$1" pin="A"/>
 <wire x1="-50.8" y1="-170.18" x2="-40.64" y2="-170.18" width="0.1524" layer="91"/>
 <junction x="-55.88" y="-165.1"/>
+<wire x1="-55.88" y1="-172.72" x2="-43.18" y2="-172.72" width="0.1524" layer="91"/>
+<wire x1="-43.18" y1="-172.72" x2="-43.18" y2="-205.74" width="0.1524" layer="91"/>
+<pinref part="Q2" gate="G$1" pin="D"/>
+<wire x1="-43.18" y1="-205.74" x2="-55.88" y2="-205.74" width="0.1524" layer="91"/>
+<wire x1="-55.88" y1="-205.74" x2="-55.88" y2="-198.12" width="0.1524" layer="91"/>
+<junction x="-55.88" y="-172.72"/>
 </segment>
 <segment>
-<pinref part="Q3" gate="G$1" pin="S"/>
-<wire x1="68.58" y1="-162.56" x2="68.58" y2="-152.4" width="0.1524" layer="91"/>
 <wire x1="68.58" y1="-152.4" x2="40.64" y2="-152.4" width="0.1524" layer="91"/>
 <label x="40.64" y="-152.4" size="1.778" layer="95" rot="R180" xref="yes"/>
-<junction x="68.58" y="-152.4"/>
 <wire x1="68.58" y1="-152.4" x2="68.58" y2="-144.78" width="0.1524" layer="91"/>
 <pinref part="U$3" gate="G$1" pin="V-"/>
 <wire x1="68.58" y1="-144.78" x2="73.66" y2="-144.78" width="0.1524" layer="91"/>
@@ -4599,13 +4576,16 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <pinref part="D3" gate="G$1" pin="A"/>
 <wire x1="73.66" y1="-149.86" x2="83.82" y2="-149.86" width="0.1524" layer="91"/>
 <junction x="68.58" y="-144.78"/>
+<wire x1="68.58" y1="-152.4" x2="81.28" y2="-152.4" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="-152.4" x2="81.28" y2="-182.88" width="0.1524" layer="91"/>
+<wire x1="81.28" y1="-182.88" x2="68.58" y2="-182.88" width="0.1524" layer="91"/>
+<pinref part="Q3" gate="G$1" pin="D"/>
+<wire x1="68.58" y1="-182.88" x2="68.58" y2="-177.8" width="0.1524" layer="91"/>
+<junction x="68.58" y="-152.4"/>
 </segment>
 <segment>
-<pinref part="Q4" gate="G$1" pin="S"/>
-<wire x1="182.88" y1="-132.08" x2="182.88" y2="-121.92" width="0.1524" layer="91"/>
 <wire x1="182.88" y1="-121.92" x2="154.94" y2="-121.92" width="0.1524" layer="91"/>
 <label x="154.94" y="-121.92" size="1.778" layer="95" rot="R180" xref="yes"/>
-<junction x="182.88" y="-121.92"/>
 <wire x1="182.88" y1="-121.92" x2="182.88" y2="-114.3" width="0.1524" layer="91"/>
 <pinref part="U$4" gate="G$1" pin="V-"/>
 <wire x1="182.88" y1="-114.3" x2="187.96" y2="-114.3" width="0.1524" layer="91"/>
@@ -4613,6 +4593,12 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <pinref part="D4" gate="G$1" pin="A"/>
 <wire x1="187.96" y1="-119.38" x2="198.12" y2="-119.38" width="0.1524" layer="91"/>
 <junction x="182.88" y="-114.3"/>
+<wire x1="182.88" y1="-121.92" x2="203.2" y2="-121.92" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="-121.92" x2="203.2" y2="-152.4" width="0.1524" layer="91"/>
+<wire x1="203.2" y1="-152.4" x2="182.88" y2="-152.4" width="0.1524" layer="91"/>
+<pinref part="Q4" gate="G$1" pin="D"/>
+<wire x1="182.88" y1="-152.4" x2="182.88" y2="-147.32" width="0.1524" layer="91"/>
+<junction x="182.88" y="-121.92"/>
 </segment>
 </net>
 <net name="PWM1" class="0">
@@ -4710,62 +4696,90 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <wire x1="-93.98" y1="-208.28" x2="-104.14" y2="-208.28" width="0.1524" layer="91"/>
 <wire x1="-104.14" y1="-208.28" x2="-106.68" y2="-208.28" width="0.1524" layer="91"/>
 <wire x1="-93.98" y1="-208.28" x2="-73.66" y2="-208.28" width="0.1524" layer="91"/>
-<pinref part="Q2" gate="G$1" pin="D"/>
-<wire x1="-73.66" y1="-208.28" x2="-55.88" y2="-208.28" width="0.1524" layer="91"/>
-<wire x1="-55.88" y1="-208.28" x2="-55.88" y2="-198.12" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="-208.28" x2="-48.26" y2="-208.28" width="0.1524" layer="91"/>
 <pinref part="R7" gate="G$1" pin="1"/>
 <wire x1="-73.66" y1="-205.74" x2="-73.66" y2="-208.28" width="0.1524" layer="91"/>
 <junction x="-93.98" y="-208.28"/>
 <junction x="-73.66" y="-208.28"/>
 <pinref part="GND21" gate="1" pin="BAT_GND"/>
 <junction x="-104.14" y="-208.28"/>
+<wire x1="-48.26" y1="-208.28" x2="-48.26" y2="-175.26" width="0.1524" layer="91"/>
+<wire x1="-48.26" y1="-175.26" x2="-55.88" y2="-175.26" width="0.1524" layer="91"/>
+<pinref part="Q2" gate="G$1" pin="S"/>
+<wire x1="-55.88" y1="-175.26" x2="-55.88" y2="-182.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C7" gate="G$1" pin="2"/>
 <wire x1="-167.64" y1="-205.74" x2="-167.64" y2="-208.28" width="0.1524" layer="91"/>
 <wire x1="-167.64" y1="-208.28" x2="-147.32" y2="-208.28" width="0.1524" layer="91"/>
-<pinref part="Q1" gate="G$1" pin="D"/>
-<wire x1="-147.32" y1="-208.28" x2="-129.54" y2="-208.28" width="0.1524" layer="91"/>
-<wire x1="-129.54" y1="-208.28" x2="-129.54" y2="-198.12" width="0.1524" layer="91"/>
+<wire x1="-147.32" y1="-208.28" x2="-121.92" y2="-208.28" width="0.1524" layer="91"/>
 <pinref part="R3" gate="G$1" pin="1"/>
 <wire x1="-147.32" y1="-205.74" x2="-147.32" y2="-208.28" width="0.1524" layer="91"/>
 <junction x="-147.32" y="-208.28"/>
 <pinref part="GND19" gate="1" pin="BAT_GND"/>
 <wire x1="-167.64" y1="-208.28" x2="-180.34" y2="-208.28" width="0.1524" layer="91"/>
 <junction x="-167.64" y="-208.28"/>
+<wire x1="-121.92" y1="-208.28" x2="-121.92" y2="-175.26" width="0.1524" layer="91"/>
+<pinref part="Q1" gate="G$1" pin="S"/>
+<wire x1="-121.92" y1="-175.26" x2="-129.54" y2="-175.26" width="0.1524" layer="91"/>
+<wire x1="-129.54" y1="-175.26" x2="-129.54" y2="-182.88" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C13" gate="G$1" pin="2"/>
 <wire x1="30.48" y1="-185.42" x2="30.48" y2="-187.96" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="-187.96" x2="17.78" y2="-187.96" width="0.1524" layer="91"/>
 <wire x1="30.48" y1="-187.96" x2="50.8" y2="-187.96" width="0.1524" layer="91"/>
-<pinref part="Q3" gate="G$1" pin="D"/>
-<wire x1="50.8" y1="-187.96" x2="68.58" y2="-187.96" width="0.1524" layer="91"/>
-<wire x1="68.58" y1="-187.96" x2="68.58" y2="-177.8" width="0.1524" layer="91"/>
+<wire x1="50.8" y1="-187.96" x2="76.2" y2="-187.96" width="0.1524" layer="91"/>
 <pinref part="R9" gate="G$1" pin="1"/>
 <wire x1="50.8" y1="-185.42" x2="50.8" y2="-187.96" width="0.1524" layer="91"/>
 <junction x="30.48" y="-187.96"/>
 <junction x="50.8" y="-187.96"/>
 <pinref part="GND23" gate="1" pin="BAT_GND"/>
+<wire x1="76.2" y1="-187.96" x2="76.2" y2="-157.48" width="0.1524" layer="91"/>
+<wire x1="76.2" y1="-157.48" x2="68.58" y2="-157.48" width="0.1524" layer="91"/>
+<pinref part="Q3" gate="G$1" pin="S"/>
+<wire x1="68.58" y1="-157.48" x2="68.58" y2="-162.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C16" gate="G$1" pin="2"/>
 <wire x1="144.78" y1="-154.94" x2="144.78" y2="-157.48" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="-157.48" x2="132.08" y2="-157.48" width="0.1524" layer="91"/>
 <wire x1="144.78" y1="-157.48" x2="165.1" y2="-157.48" width="0.1524" layer="91"/>
-<pinref part="Q4" gate="G$1" pin="D"/>
-<wire x1="165.1" y1="-157.48" x2="182.88" y2="-157.48" width="0.1524" layer="91"/>
-<wire x1="182.88" y1="-157.48" x2="182.88" y2="-147.32" width="0.1524" layer="91"/>
+<wire x1="165.1" y1="-157.48" x2="195.58" y2="-157.48" width="0.1524" layer="91"/>
 <pinref part="R11" gate="G$1" pin="1"/>
 <wire x1="165.1" y1="-154.94" x2="165.1" y2="-157.48" width="0.1524" layer="91"/>
 <junction x="144.78" y="-157.48"/>
 <junction x="165.1" y="-157.48"/>
 <pinref part="GND25" gate="1" pin="BAT_GND"/>
+<wire x1="195.58" y1="-157.48" x2="195.58" y2="-129.54" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="-129.54" x2="182.88" y2="-129.54" width="0.1524" layer="91"/>
+<pinref part="Q4" gate="G$1" pin="S"/>
+<wire x1="182.88" y1="-129.54" x2="182.88" y2="-132.08" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND38" gate="1" pin="BAT_GND"/>
 <pinref part="NET_BRIDGE" gate="G$1" pin="P$1"/>
 <wire x1="-73.66" y1="7.62" x2="-71.12" y2="7.62" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C8" gate="G$1" pin="-"/>
+<wire x1="-152.4" y1="-162.56" x2="-152.4" y2="-165.1" width="0.1524" layer="91"/>
+<pinref part="GND20" gate="1" pin="BAT_GND"/>
+</segment>
+<segment>
+<pinref part="C12" gate="G$1" pin="-"/>
+<wire x1="-78.74" y1="-162.56" x2="-78.74" y2="-165.1" width="0.1524" layer="91"/>
+<pinref part="GND22" gate="1" pin="BAT_GND"/>
+</segment>
+<segment>
+<pinref part="C14" gate="G$1" pin="-"/>
+<wire x1="45.72" y1="-142.24" x2="45.72" y2="-144.78" width="0.1524" layer="91"/>
+<pinref part="GND24" gate="1" pin="BAT_GND"/>
+</segment>
+<segment>
+<pinref part="C17" gate="G$1" pin="-"/>
+<wire x1="160.02" y1="-111.76" x2="160.02" y2="-114.3" width="0.1524" layer="91"/>
+<pinref part="GND26" gate="1" pin="BAT_GND"/>
 </segment>
 </net>
 <net name="VBAT" class="0">
@@ -4795,6 +4809,11 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <wire x1="-134.62" y1="30.48" x2="-124.46" y2="30.48" width="0.1524" layer="91"/>
 <wire x1="-124.46" y1="30.48" x2="-124.46" y2="33.02" width="0.1524" layer="91"/>
 <junction x="-124.46" y="33.02"/>
+</segment>
+<segment>
+<pinref part="D5" gate="G$1" pin="A"/>
+<wire x1="-180.34" y1="-12.7" x2="-165.1" y2="-12.7" width="0.1524" layer="91"/>
+<label x="-180.34" y="-12.7" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
 <net name="SDA" class="0">
