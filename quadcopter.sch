@@ -3534,6 +3534,70 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 </deviceset>
 </devicesets>
 </library>
+<library name="LED">
+<packages>
+<package name="BLUE_LED">
+<smd name="P$1" x="-1.325" y="0" dx="1.8" dy="1" layer="1"/>
+<smd name="P$2" x="1.325" y="0" dx="1.8" dy="1" layer="1"/>
+<wire x1="-2.4" y1="0.6" x2="-2.4" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="-2.4" y1="-0.6" x2="2.4" y2="-0.6" width="0.127" layer="21"/>
+<wire x1="2.4" y1="-0.6" x2="2.4" y2="0.6" width="0.127" layer="21"/>
+<wire x1="2.4" y1="0.6" x2="-2.4" y2="0.6" width="0.127" layer="21"/>
+<circle x="-2.9" y="0.2" radius="0.1" width="0.127" layer="21"/>
+<text x="-2.4" y="0.8" size="0.88" layer="25">&gt;NAME</text>
+<text x="-2.4" y="-1.2" size="0.44" layer="27">&gt;VALUE</text>
+<wire x1="-0.9" y1="0.45" x2="-0.9" y2="-0.45" width="0.127" layer="51"/>
+<wire x1="-0.9" y1="-0.45" x2="0.9" y2="-0.45" width="0.127" layer="51"/>
+<wire x1="0.9" y1="-0.45" x2="0.9" y2="0.45" width="0.127" layer="51"/>
+<wire x1="0.9" y1="0.45" x2="-0.9" y2="0.45" width="0.127" layer="51"/>
+<wire x1="-2.5" y1="0.7" x2="-2.5" y2="-0.7" width="0.127" layer="39"/>
+<wire x1="-2.5" y1="-0.7" x2="2.5" y2="-0.7" width="0.127" layer="39"/>
+<wire x1="2.5" y1="-0.7" x2="2.5" y2="0.7" width="0.127" layer="39"/>
+<wire x1="2.5" y1="0.7" x2="-2.5" y2="0.7" width="0.127" layer="39"/>
+</package>
+</packages>
+<symbols>
+<symbol name="LED">
+<wire x1="-10.16" y1="0" x2="-5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="0" x2="-5.08" y2="2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="2.54" x2="0" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="-5.08" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-5.08" y1="-2.54" x2="-5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="0" x2="5.08" y2="0" width="0.254" layer="94"/>
+<wire x1="0" y1="2.54" x2="0" y2="0" width="0.254" layer="94"/>
+<pin name="A" x="-10.16" y="0" length="point" rot="R180"/>
+<pin name="C" x="5.08" y="0" length="point"/>
+<text x="-10.16" y="7.62" size="1.27" layer="95">&gt;NAME</text>
+<text x="-10.16" y="5.08" size="1.27" layer="96">&gt;VALUE</text>
+<wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="BLUE_LED" prefix="D" uservalue="yes">
+<gates>
+<gate name="G$1" symbol="LED" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="BLUE_LED">
+<connects>
+<connect gate="G$1" pin="A" pad="P$1"/>
+<connect gate="G$1" pin="C" pad="P$2"/>
+</connects>
+<technologies>
+<technology name="">
+<attribute name="CREATOR" value="John Wu" constant="no"/>
+<attribute name="DISTR" value="Digikey" constant="no"/>
+<attribute name="DISTRPN" value="1080-1401-1-ND" constant="no"/>
+<attribute name="MFR" value="Everlight Electronics Co Ltd" constant="no"/>
+<attribute name="MPN" value="QTLP600CBTR" constant="no"/>
+<attribute name="REVIEWER" value="" constant="no"/>
+</technology>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -3657,6 +3721,9 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="GND38" library="quadparts_prebuilt" deviceset="BAT_GND" device=""/>
 <part name="GND39" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="P+12" library="quadparts_prebuilt" deviceset="VCC" device=""/>
+<part name="D5" library="LED" deviceset="BLUE_LED" device=""/>
+<part name="P+13" library="quadparts_prebuilt" deviceset="VCC" device=""/>
+<part name="GND40" library="quadparts_prebuilt" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -3776,6 +3843,9 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <instance part="GND38" gate="1" x="-68.58" y="22.86" rot="R270"/>
 <instance part="GND39" gate="1" x="-45.72" y="22.86" rot="R90"/>
 <instance part="P+12" gate="VCC" x="33.02" y="53.34" rot="R270"/>
+<instance part="D5" gate="G$1" x="17.78" y="-132.08"/>
+<instance part="P+13" gate="VCC" x="-2.54" y="-132.08" rot="R90"/>
+<instance part="GND40" gate="1" x="30.48" y="-132.08" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -3983,6 +4053,11 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <pinref part="NET_BRIDGE" gate="G$1" pin="P$2"/>
 <pinref part="GND39" gate="1" pin="GND"/>
 <wire x1="-50.8" y1="22.86" x2="-48.26" y2="22.86" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="D5" gate="G$1" pin="C"/>
+<pinref part="GND40" gate="1" pin="GND"/>
+<wire x1="22.86" y1="-132.08" x2="27.94" y2="-132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -4199,6 +4274,11 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <pinref part="J3" gate="G$1" pin="7"/>
 <pinref part="P+12" gate="VCC" pin="VCC"/>
 <wire x1="12.7" y1="53.34" x2="30.48" y2="53.34" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="P+13" gate="VCC" pin="VCC"/>
+<pinref part="D5" gate="G$1" pin="A"/>
+<wire x1="0" y1="-132.08" x2="7.62" y2="-132.08" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$10" class="0">
