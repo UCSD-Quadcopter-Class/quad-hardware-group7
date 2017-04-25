@@ -64,7 +64,6 @@
 <wire x1="-2.4" y1="-0.6" x2="2.4" y2="-0.6" width="0.127" layer="21"/>
 <wire x1="2.4" y1="-0.6" x2="2.4" y2="0.6" width="0.127" layer="21"/>
 <wire x1="2.4" y1="0.6" x2="-2.4" y2="0.6" width="0.127" layer="21"/>
-<circle x="-2.9" y="0.2" radius="0.1" width="0.127" layer="21"/>
 <text x="-2.4" y="0.8" size="0.88" layer="25">&gt;NAME</text>
 <text x="-2.4" y="-1.2" size="0.44" layer="27">&gt;VALUE</text>
 <wire x1="-0.9" y1="0.45" x2="-0.9" y2="-0.45" width="0.127" layer="51"/>
@@ -75,6 +74,10 @@
 <wire x1="-2.5" y1="-0.7" x2="2.5" y2="-0.7" width="0.127" layer="39"/>
 <wire x1="2.5" y1="-0.7" x2="2.5" y2="0.7" width="0.127" layer="39"/>
 <wire x1="2.5" y1="0.7" x2="-2.5" y2="0.7" width="0.127" layer="39"/>
+<wire x1="-0.4" y1="0.3" x2="-0.4" y2="-0.3" width="0.127" layer="51"/>
+<wire x1="-0.4" y1="-0.3" x2="0.3" y2="0" width="0.127" layer="51"/>
+<wire x1="0.3" y1="0" x2="-0.4" y2="0.3" width="0.127" layer="51"/>
+<wire x1="0.3" y1="0.3" x2="0.3" y2="-0.3" width="0.127" layer="51"/>
 </package>
 </packages>
 <symbols>
@@ -91,6 +94,11 @@
 <text x="-10.16" y="7.62" size="1.27" layer="95">&gt;NAME</text>
 <text x="-10.16" y="5.08" size="1.27" layer="96">&gt;VALUE</text>
 <wire x1="0" y1="0" x2="0" y2="-2.54" width="0.254" layer="94"/>
+<wire x1="-2" y1="4" x2="0" y2="6" width="0.254" layer="94"/>
+<wire x1="0" y1="6" x2="-1" y2="7" width="0.254" layer="94"/>
+<wire x1="-1" y1="7" x2="1" y2="7" width="0.254" layer="94"/>
+<wire x1="1" y1="7" x2="1" y2="5" width="0.254" layer="94"/>
+<wire x1="1" y1="5" x2="0" y2="6" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
@@ -108,11 +116,11 @@
 <technology name="">
 <attribute name="CREATOR" value="John Wu" constant="no"/>
 <attribute name="DATASHEET" value="https://media.digikey.com/pdf/Data%20Sheets/Everlight%20PDFs/QTLP600C.pdf" constant="no"/>
-<attribute name="DISTR" value="Digikey" constant="no"/>
-<attribute name="DISTRPN" value="1080-1401-1-ND" constant="no"/>
+<attribute name="DIST" value="Digikey" constant="no"/>
+<attribute name="DISTPN" value="1080-1401-1-ND" constant="no"/>
 <attribute name="MFR" value="Everlight Electronics Co Ltd" constant="no"/>
 <attribute name="MPN" value="QTLP600CBTR" constant="no"/>
-<attribute name="REVIEWER" value="" constant="no"/>
+<attribute name="REVIEWER" value="Josh Crook" constant="no"/>
 </technology>
 </technologies>
 </device>
