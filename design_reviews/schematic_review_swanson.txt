@@ -1,0 +1,13 @@
+Ground symbols should alwasy point down.
+VCC (and other power symbols should always point up)
+VCC should be called 3V
+Your pull up on SCL and SDA need to be from the the lines to 3V.  Yours are in series with the bus lines.
+
+Did you build your owr ucontroller symbol?
+
+the 1Uf caps in the motor controller should be 0.1uf
+
+Flyback and filter are connected across all your motor controllers.
+
+Double check the orientaton of your balun and which pins from the ucontroller are connected where.  Compare to red board schematic.
+
