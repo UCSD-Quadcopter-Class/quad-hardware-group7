@@ -3427,60 +3427,60 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <library name="quadparts-nick">
 <packages>
 <package name="N-CHANNEL_MOSFET">
-<smd name="3" x="0" y="1.4845" dx="0.559" dy="1.724" layer="1"/>
-<smd name="2" x="0.95" y="-1.4845" dx="0.559" dy="1.724" layer="1"/>
-<smd name="1" x="-0.95" y="-1.4845" dx="0.559" dy="1.724" layer="1"/>
+<smd name="3" x="0" y="0.875" dx="2.9" dy="2.05" layer="1"/>
+<smd name="2" x="0.95" y="-1.27" dx="1" dy="1.725" layer="1"/>
+<smd name="1" x="-0.95" y="-1.27" dx="1" dy="1.725" layer="1"/>
 <wire x1="1.5" y1="0.7" x2="1.5" y2="-0.7" width="0.1" layer="51"/>
 <wire x1="-1.5" y1="0.7" x2="1.5" y2="0.7" width="0.1" layer="51"/>
 <wire x1="-1.5" y1="0.7" x2="-1.5" y2="-0.7" width="0.1" layer="51"/>
 <wire x1="-1.5" y1="-0.7" x2="1.5" y2="-0.7" width="0.1" layer="51"/>
-<text x="0.9" y="1.6" size="0.88" layer="25">&gt;NAME</text>
-<text x="1.5" y="-1.8" size="0.6096" layer="27">&gt;VALUE</text>
-<wire x1="-1.5" y1="0.7" x2="-1.5" y2="-0.7" width="0.127" layer="39"/>
-<wire x1="-1.5" y1="-0.7" x2="-1.3" y2="-0.7" width="0.127" layer="39"/>
-<wire x1="-1.3" y1="-0.7" x2="-1.3" y2="-2.5" width="0.127" layer="39"/>
-<wire x1="-1.3" y1="-2.5" x2="1.3" y2="-2.5" width="0.127" layer="39"/>
-<wire x1="1.3" y1="-2.5" x2="1.3" y2="-0.7" width="0.127" layer="39"/>
-<wire x1="1.3" y1="-0.7" x2="1.5" y2="-0.7" width="0.127" layer="39"/>
-<wire x1="1.5" y1="-0.7" x2="1.5" y2="0.7" width="0.127" layer="39"/>
-<wire x1="1.5" y1="0.7" x2="0.4" y2="0.7" width="0.127" layer="39"/>
-<wire x1="0.4" y1="0.7" x2="0.4" y2="2.4" width="0.127" layer="39"/>
-<wire x1="0.4" y1="2.4" x2="-0.4" y2="2.4" width="0.127" layer="39"/>
-<wire x1="-0.4" y1="2.4" x2="-0.4" y2="0.7" width="0.127" layer="39"/>
-<wire x1="-0.4" y1="0.7" x2="-1.5" y2="0.7" width="0.127" layer="39"/>
+<text x="-1.9" y="2.7" size="0.88" layer="25" font="vector">&gt;NAME</text>
+<text x="-1.6" y="-3.4" size="0.6096" layer="27" font="vector">&gt;VALUE</text>
+<wire x1="-1.6" y1="-2.2" x2="1.6" y2="-2.2" width="0.127" layer="39"/>
+<wire x1="1.6" y1="-2.2" x2="1.6" y2="2" width="0.127" layer="39"/>
+<wire x1="1.6" y1="2" x2="-1.6" y2="2" width="0.127" layer="39"/>
+<wire x1="-1.6" y1="2" x2="-1.6" y2="-2.2" width="0.127" layer="39"/>
+<wire x1="-1.8" y1="1.8" x2="-1.8" y2="2.2" width="0.127" layer="21"/>
+<wire x1="-1.8" y1="2.2" x2="-1.3" y2="2.2" width="0.127" layer="21"/>
+<wire x1="1.1" y1="2.2" x2="1.7" y2="2.2" width="0.127" layer="21"/>
+<wire x1="1.7" y1="2.2" x2="1.7" y2="1.7" width="0.127" layer="21"/>
+<wire x1="-1.8" y1="-2" x2="-1.8" y2="-2.4" width="0.127" layer="21"/>
+<wire x1="-1.8" y1="-2.4" x2="-1.3" y2="-2.4" width="0.127" layer="21"/>
+<wire x1="1.3" y1="-2.4" x2="1.7" y2="-2.4" width="0.127" layer="21"/>
+<wire x1="1.7" y1="-2.4" x2="1.7" y2="-1.9" width="0.127" layer="21"/>
 </package>
 <package name="9-AXIS_IMU">
 <wire x1="-1.75" y1="1.5" x2="1.75" y2="1.5" width="0.1" layer="51"/>
 <wire x1="-1.75" y1="1.5" x2="-1.75" y2="-1.5" width="0.1" layer="51"/>
 <wire x1="-1.75" y1="-1.5" x2="1.75" y2="-1.5" width="0.1" layer="51"/>
 <wire x1="1.75" y1="1.5" x2="1.75" y2="-1.5" width="0.1" layer="51"/>
-<smd name="1" x="-1.505" y="1.725" dx="0.23" dy="1.35" layer="1"/>
-<smd name="24" x="-1.075" y="1.725" dx="0.23" dy="1.35" layer="1"/>
-<smd name="23" x="-0.645" y="1.725" dx="0.23" dy="1.35" layer="1"/>
-<smd name="22" x="-0.215" y="1.725" dx="0.23" dy="1.35" layer="1"/>
-<smd name="21" x="0.215" y="1.725" dx="0.23" dy="1.35" layer="1"/>
-<smd name="20" x="0.645" y="1.725" dx="0.23" dy="1.35" layer="1"/>
-<smd name="19" x="1.075" y="1.725" dx="0.23" dy="1.35" layer="1"/>
-<smd name="18" x="1.505" y="1.725" dx="0.23" dy="1.35" layer="1"/>
-<smd name="6" x="-1.505" y="-1.725" dx="0.23" dy="1.35" layer="1"/>
-<smd name="7" x="-1.075" y="-1.725" dx="0.23" dy="1.35" layer="1"/>
-<smd name="8" x="-0.645" y="-1.725" dx="0.23" dy="1.35" layer="1"/>
-<smd name="9" x="-0.215" y="-1.725" dx="0.23" dy="1.35" layer="1"/>
-<smd name="10" x="0.215" y="-1.725" dx="0.23" dy="1.35" layer="1"/>
-<smd name="11" x="0.645" y="-1.725" dx="0.23" dy="1.35" layer="1"/>
-<smd name="12" x="1.075" y="-1.725" dx="0.23" dy="1.35" layer="1"/>
-<smd name="13" x="1.505" y="-1.725" dx="0.23" dy="1.35" layer="1"/>
-<smd name="2" x="-1.975" y="0.645" dx="1.35" dy="0.23" layer="1"/>
-<smd name="5" x="-1.975" y="-0.645" dx="1.35" dy="0.23" layer="1"/>
-<smd name="3" x="-1.975" y="0.215" dx="1.35" dy="0.23" layer="1"/>
-<smd name="4" x="-1.975" y="-0.215" dx="1.35" dy="0.23" layer="1"/>
-<smd name="17" x="1.975" y="0.645" dx="1.35" dy="0.23" layer="1"/>
-<smd name="16" x="1.975" y="0.215" dx="1.35" dy="0.23" layer="1"/>
-<smd name="15" x="1.975" y="-0.215" dx="1.35" dy="0.23" layer="1"/>
-<smd name="14" x="1.975" y="-0.645" dx="1.35" dy="0.23" layer="1"/>
+<smd name="1" x="-1.505" y="1.725" dx="0.225" dy="1.35" layer="1"/>
+<smd name="24" x="-1.075" y="1.725" dx="0.225" dy="1.35" layer="1"/>
+<smd name="23" x="-0.645" y="1.725" dx="0.225" dy="1.35" layer="1"/>
+<smd name="22" x="-0.215" y="1.725" dx="0.225" dy="1.35" layer="1"/>
+<smd name="21" x="0.215" y="1.725" dx="0.225" dy="1.35" layer="1"/>
+<smd name="20" x="0.645" y="1.725" dx="0.225" dy="1.35" layer="1"/>
+<smd name="19" x="1.075" y="1.725" dx="0.225" dy="1.35" layer="1"/>
+<smd name="18" x="1.505" y="1.725" dx="0.225" dy="1.35" layer="1"/>
+<smd name="6" x="-1.505" y="-1.725" dx="0.225" dy="1.35" layer="1"/>
+<smd name="7" x="-1.075" y="-1.725" dx="0.225" dy="1.35" layer="1"/>
+<smd name="8" x="-0.645" y="-1.725" dx="0.225" dy="1.35" layer="1"/>
+<smd name="9" x="-0.215" y="-1.725" dx="0.225" dy="1.35" layer="1"/>
+<smd name="10" x="0.215" y="-1.725" dx="0.225" dy="1.35" layer="1"/>
+<smd name="11" x="0.645" y="-1.725" dx="0.225" dy="1.35" layer="1"/>
+<smd name="12" x="1.075" y="-1.725" dx="0.225" dy="1.35" layer="1"/>
+<smd name="13" x="1.505" y="-1.725" dx="0.225" dy="1.35" layer="1"/>
+<smd name="2" x="-1.975" y="0.645" dx="1.35" dy="0.225" layer="1"/>
+<smd name="5" x="-1.975" y="-0.645" dx="1.35" dy="0.225" layer="1"/>
+<smd name="3" x="-1.975" y="0.215" dx="1.35" dy="0.225" layer="1"/>
+<smd name="4" x="-1.975" y="-0.215" dx="1.35" dy="0.225" layer="1"/>
+<smd name="17" x="1.975" y="0.645" dx="1.35" dy="0.225" layer="1"/>
+<smd name="16" x="1.975" y="0.215" dx="1.35" dy="0.225" layer="1"/>
+<smd name="15" x="1.975" y="-0.215" dx="1.35" dy="0.225" layer="1"/>
+<smd name="14" x="1.975" y="-0.645" dx="1.35" dy="0.225" layer="1"/>
 <circle x="-2" y="1.6" radius="0.1" width="0.18" layer="21"/>
-<text x="-1.9" y="2.6" size="0.9" layer="25">&gt;NAME</text>
-<text x="-1.7" y="-3.2" size="0.6096" layer="27">&gt;VALUE</text>
+<text x="-1.9" y="2.6" size="0.9" layer="25" font="vector">&gt;NAME</text>
+<text x="-1.7" y="-3.2" size="0.6096" layer="27" font="vector">&gt;VALUE</text>
 <wire x1="-2.7" y1="0.9" x2="-2.7" y2="-0.9" width="0.127" layer="39"/>
 <wire x1="-2.7" y1="-0.9" x2="-1.9" y2="-0.9" width="0.127" layer="39"/>
 <wire x1="-1.9" y1="-0.9" x2="-1.9" y2="-2.5" width="0.127" layer="39"/>
@@ -3495,6 +3495,9 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <wire x1="-1.8" y1="2" x2="-2.3" y2="2" width="0.127" layer="39"/>
 <wire x1="-2.3" y1="2" x2="-2.3" y2="0.9" width="0.127" layer="39"/>
 <wire x1="-2.3" y1="0.9" x2="-2.7" y2="0.9" width="0.127" layer="39"/>
+<wire x1="2" y1="1.7" x2="2" y2="1.1" width="0.127" layer="21"/>
+<wire x1="1.9" y1="-1.2" x2="1.9" y2="-1.7" width="0.127" layer="21"/>
+<wire x1="-1.9" y1="-1.1" x2="-1.9" y2="-1.6" width="0.127" layer="21"/>
 </package>
 <package name="MALE_HEADER_2X1_0.1IN">
 <description>Header, Vertical,2.54 mm pitch;0.635 mm lead width,2 pins,1 row,2 pins per row,5.08 mm L X 2.54 mm W X 8.38 mm H body&lt;p&gt;&lt;i&gt;PCB Libraries Packages&lt;/i&gt;</description>
@@ -3635,8 +3638,8 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <wire x1="5.08" y1="0" x2="5.08" y2="7.62" width="0.254" layer="94"/>
 <wire x1="5.08" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="7.62" x2="-5.08" y2="0" width="0.254" layer="94"/>
-<text x="-10.16" y="10.16" size="4.572" layer="95">&gt;NAME</text>
-<text x="2.54" y="-5.08" size="3.302" layer="96">&gt;VALUE</text>
+<text x="-10.16" y="10.16" size="4.572" layer="95" font="vector">&gt;NAME</text>
+<text x="2.54" y="-5.08" size="3.302" layer="96" font="vector">&gt;VALUE</text>
 <wire x1="0" y1="-5.08" x2="0" y2="0" width="0.254" layer="94"/>
 </symbol>
 <symbol name="9-AXIS_IMU">
@@ -3669,7 +3672,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <wire x1="5.08" y1="27.94" x2="5.08" y2="-22.86" width="0.254" layer="94"/>
 <wire x1="5.08" y1="-22.86" x2="-25.4" y2="-22.86" width="0.254" layer="94"/>
 <circle x="-25.4" y="27.94" radius="0.254" width="1.27" layer="94"/>
-<text x="-22.86" y="-30.48" size="6.4516" layer="95">&gt;NAME</text>
+<text x="-22.86" y="-30.48" size="6.4516" layer="95" font="vector">&gt;NAME</text>
 </symbol>
 <symbol name="MALE_HEADER_2POS">
 <description>2 pin single inline pin header, socket, or connector</description>
@@ -3689,14 +3692,14 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <wire x1="0" y1="-2.54" x2="2.54" y2="-2.54" width="0.254" layer="94"/>
 <pin name="P$1" x="-5.08" y="0" length="point" rot="R180"/>
 <pin name="P$2" x="7.62" y="0" length="point"/>
-<text x="-5.08" y="5.08" size="3.175" layer="95">&gt;NAME</text>
+<text x="-5.08" y="5.08" size="3.175" layer="95" font="vector">&gt;NAME</text>
 <wire x1="2.54" y1="2.54" x2="2.54" y2="-2.54" width="0.254" layer="94" curve="-180"/>
 <wire x1="0" y1="-2.54" x2="0" y2="2.54" width="0.254" layer="94" curve="-180"/>
 <wire x1="-5.08" y1="0" x2="7.62" y2="0" width="0.254" layer="94"/>
 </symbol>
 </symbols>
 <devicesets>
-<deviceset name="N-CHANNEL_MOSFET" uservalue="yes">
+<deviceset name="N-CHANNEL_MOSFET" prefix="Q">
 <description>N-Channel MOSFET</description>
 <gates>
 <gate name="G$1" symbol="N-CHANNEL_MOSFET" x="0" y="0"/>
@@ -3715,13 +3718,13 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <attribute name="DISTPN" value="SI2302CDS-T1-E3CT-ND " constant="no"/>
 <attribute name="MFR" value="Vishay Siliconix " constant="no"/>
 <attribute name="MPN" value="SI2302CDS-T1-E3" constant="no"/>
-<attribute name="REVIEWER" value="" constant="no"/>
+<attribute name="REVIEWER" value="Joshua Crook" constant="no"/>
 </technology>
 </technologies>
 </device>
 </devices>
 </deviceset>
-<deviceset name="9-AXIS_IMU">
+<deviceset name="9-AXIS_IMU" prefix="U">
 <description>LSM9DS1TR 9-Axis IMU</description>
 <gates>
 <gate name="G$1" symbol="9-AXIS_IMU" x="0" y="0"/>
@@ -3761,7 +3764,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <attribute name="DISTPN" value="497-14946-1-ND " constant="no"/>
 <attribute name="MFR" value="STMicroelectronics " constant="no"/>
 <attribute name="MPN" value="LSM9DS1TR " constant="no"/>
-<attribute name="REVIEWER" value="" constant="no"/>
+<attribute name="REVIEWER" value="Joshua Crook" constant="no"/>
 </technology>
 </technologies>
 </device>
@@ -3804,7 +3807,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <technologies>
 <technology name="">
 <attribute name="CREATOR" value="Nicholas Deagon" constant="no"/>
-<attribute name="REVIEWER" value="" constant="no"/>
+<attribute name="REVIEWER" value="Joshua Crook" constant="no"/>
 </technology>
 </technologies>
 </device>
