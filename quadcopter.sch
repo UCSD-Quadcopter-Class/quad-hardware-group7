@@ -3896,6 +3896,10 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <classes>
 <class number="0" name="default" width="0" drill="0">
 </class>
+<class number="1" name="RFSIG" width="0.4572" drill="0">
+</class>
+<class number="2" name="HIGHCURRENT" width="0.4572" drill="0">
+</class>
 </classes>
 <parts>
 <part name="U1" library="quadparts_prebuilt" deviceset="ATMEGA128RFA1" device=""/>
@@ -4394,7 +4398,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <wire x1="40.64" y1="-78.74" x2="38.1" y2="-78.74" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$8" class="0">
+<net name="N$8" class="1">
 <segment>
 <pinref part="C9" gate="G$1" pin="1"/>
 <pinref part="B1" gate="G$1" pin="IN"/>
@@ -4659,7 +4663,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <wire x1="-88.9" y1="-60.96" x2="-78.74" y2="-60.96" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="FILTERED1" class="0">
+<net name="FILTERED1" class="2">
 <segment>
 <pinref part="Q1" gate="G$1" pin="GND"/>
 <pinref part="R2" gate="G$1" pin="2"/>
@@ -4694,7 +4698,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <label x="-27.94" y="27.94" size="1.27" layer="95" font="vector" xref="yes"/>
 </segment>
 </net>
-<net name="FLYBACK1" class="0">
+<net name="FLYBACK1" class="2">
 <segment>
 <wire x1="-129.54" y1="-172.72" x2="-157.48" y2="-172.72" width="0.1524" layer="91"/>
 <label x="-157.48" y="-172.72" size="1.778" layer="95" rot="R180" xref="yes"/>
@@ -4792,7 +4796,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <wire x1="190.5" y1="0" x2="160.02" y2="0" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="BAT_GND" class="0">
+<net name="BAT_GND" class="2">
 <segment>
 <pinref part="J3" gate="G$1" pin="9"/>
 <wire x1="-30.48" y1="43.18" x2="-27.94" y2="43.18" width="0.1524" layer="91"/>
@@ -4895,7 +4899,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <pinref part="GND26" gate="1" pin="BAT_GND"/>
 </segment>
 </net>
-<net name="VBAT" class="0">
+<net name="VBAT" class="2">
 <segment>
 <pinref part="J3" gate="G$1" pin="8"/>
 <wire x1="-30.48" y1="40.64" x2="-27.94" y2="40.64" width="0.1524" layer="91"/>
@@ -5036,7 +5040,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <label x="137.16" y="-25.4" size="1.778" layer="95" rot="R90" xref="yes"/>
 </segment>
 </net>
-<net name="N$18" class="0">
+<net name="N$18" class="2">
 <segment>
 <pinref part="BATT1" gate="G$1" pin="P"/>
 <pinref part="J2" gate="G$1" pin="1"/>
@@ -5044,7 +5048,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <wire x1="-121.92" y1="0" x2="-121.92" y2="-5.08" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="FLYBACK2" class="0">
+<net name="FLYBACK2" class="2">
 <segment>
 <wire x1="-55.88" y1="-172.72" x2="-83.82" y2="-172.72" width="0.1524" layer="91"/>
 <label x="-83.82" y="-172.72" size="1.778" layer="95" rot="R180" xref="yes"/>
@@ -5064,7 +5068,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <wire x1="-40.64" y1="-165.1" x2="-40.64" y2="-170.18" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="FILTERED2" class="0">
+<net name="FILTERED2" class="2">
 <segment>
 <pinref part="Q2" gate="G$1" pin="GND"/>
 <pinref part="R4" gate="G$1" pin="2"/>
@@ -5078,7 +5082,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <label x="-83.82" y="-177.8" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="FLYBACK3" class="0">
+<net name="FLYBACK3" class="2">
 <segment>
 <wire x1="68.58" y1="-152.4" x2="40.64" y2="-152.4" width="0.1524" layer="91"/>
 <label x="40.64" y="-152.4" size="1.778" layer="95" rot="R180" xref="yes"/>
@@ -5098,7 +5102,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <wire x1="83.82" y1="-149.86" x2="83.82" y2="-144.78" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="FILTERED3" class="0">
+<net name="FILTERED3" class="2">
 <segment>
 <pinref part="Q3" gate="G$1" pin="GND"/>
 <pinref part="R8" gate="G$1" pin="2"/>
@@ -5112,7 +5116,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <label x="40.64" y="-157.48" size="1.778" layer="95" rot="R180" xref="yes"/>
 </segment>
 </net>
-<net name="FLYBACK4" class="0">
+<net name="FLYBACK4" class="2">
 <segment>
 <wire x1="182.88" y1="-121.92" x2="154.94" y2="-121.92" width="0.1524" layer="91"/>
 <label x="154.94" y="-121.92" size="1.778" layer="95" rot="R180" xref="yes"/>
@@ -5132,7 +5136,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <wire x1="198.12" y1="-119.38" x2="198.12" y2="-114.3" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="FILTERED4" class="0">
+<net name="FILTERED4" class="2">
 <segment>
 <pinref part="Q4" gate="G$1" pin="GND"/>
 <pinref part="R10" gate="G$1" pin="2"/>
