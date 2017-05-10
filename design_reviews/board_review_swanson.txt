@@ -1,3 +1,4 @@
+
 commit 0311a5c422b5d14d150f2adc88ca5faaa71fff88
 
 You need to reroute your board with the new 4pcb-66board.dru.  
@@ -28,5 +29,4 @@ your resister and cap in yoru motor drivers are still in the wrong order in your
 
 Eagle lint does not pass.
 
-
-
+I just committed a new CAM file.  Please be sure to update and use it when you build you cams again.
