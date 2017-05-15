@@ -2,31 +2,46 @@
 commit 0311a5c422b5d14d150f2adc88ca5faaa71fff88
 
 You need to reroute your board with the new 4pcb-66board.dru.  
+// rerouted
 
 You've got some width problems in your radio driver that you've approved in DRC that you should not have.
+// rerouted and fixed the width problems.
 
 I would adjust the restrict on your IMU package to eliminate those approved warnings.
+// adjusted
 
 The layout of your oscilator is little differet than what's on the redboard.  In yours, the signal from the oscilator goes through one of the cap pads.  IN the red board layout, the caps hang off the side, and there's a direct line from the oscilattor to the uCtrlr.
+// changed layout of the oscillator to match the red board layout
 
 The trace from C11 to the Balun is a little long. 
+// made antena look a lot like the red board layout
 
 One Pad for R3 overlaps with a wire leaving a little triangle of open space.
+// rerouted and r3 looks good
 
 I just noticed that your custom LEDs are 0603. Soldering them is a little challenging. 0805 is better.
+// we accept the challenge
 
 you've got power underneath your IMU.  USe a cutout.
+// cutout used
 
 Your decoupling caps are a bit far away from your IMU and your microController.  I know it's hard to get them really close, because the caps are large, but a little closer would be better.
+// made decoupling caps closer
 
 If you want to attach your quad to the test stand, put two 2.5mm holes along the midline of the quadcopter.  this will make bring up and testing easier.
+// added the holes
 
 I'm a little nervous about the width of your motor grippers.  1.73mm is a little narrow and maybe prone to breaking
+// made the motor gripers twice as big
 
 you've got no reset button.
+// added reset button
 
 your resister and cap in yoru motor drivers are still in the wrong order in your schematic.
+// fixed resistor and cap order
 
 Eagle lint does not pass.
+// the only thing that doesnt pass is the netbridge stuff. We fixed the mosfet error.
 
 I just committed a new CAM file.  Please be sure to update and use it when you build you cams again.
+// using new cam file

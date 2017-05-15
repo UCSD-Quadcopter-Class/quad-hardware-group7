@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.0">
+<eagle version="8.1.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -3798,7 +3798,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <wire x1="5.08" y1="7.62" x2="-5.08" y2="7.62" width="0.254" layer="94"/>
 <wire x1="-5.08" y1="7.62" x2="-5.08" y2="0" width="0.254" layer="94"/>
 <text x="-10.16" y="10.16" size="4.572" layer="95" font="vector">&gt;NAME</text>
-<text x="2.54" y="-5.08" size="3.302" layer="96" font="vector">&gt;VALUE</text>
 <wire x1="0" y1="-5.08" x2="0" y2="0" width="0.254" layer="94"/>
 </symbol>
 <symbol name="9-AXIS_IMU">
