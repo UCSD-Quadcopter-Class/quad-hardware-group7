@@ -1,15 +1,23 @@
 Ground symbols should alwasy point down.
 VCC (and other power symbols should always point up)
+// VCC & GND are now oriented correctly
+
 VCC should be called 3V
 Your pull up on SCL and SDA need to be from the the lines to 3V.  Yours are in series with the bus lines.
+// Fixed pull up wiring
 
 Did you build your owr ucontroller symbol?
+// no
 
 the 1Uf caps in the motor controller should be 0.1uf
+// fixed
 
 Flyback and filter are connected across all your motor controllers.
+// fixed
 
 Double check the orientaton of your balun and which pins from the ucontroller are connected where.  Compare to red board schematic.
+// triple checked
 
 The cap and resistor in your motor controller input filters are wrong:  The cap should be between the PWM line and GND. The resistor should be on the path from the microcontroller to the capacitor and the mosfet.
+// fixed (again) see brd review.
 
