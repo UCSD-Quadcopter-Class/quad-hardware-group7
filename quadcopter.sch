@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!DOCTYPE eagle SYSTEM "eagle.dtd">
-<eagle version="8.2.0">
+<eagle version="8.1.1">
 <drawing>
 <settings>
 <setting alwaysvectorfont="yes"/>
@@ -4143,7 +4143,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="GND34" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="C23" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
 <part name="C24" library="quadparts_prebuilt" deviceset="CAPACITOR-NP_" device="SMD-2012-0805_CERAMIC-1UF" value="1uF"/>
-<part name="GND35" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="GND36" library="quadparts_prebuilt" deviceset="GND" device=""/>
 <part name="J2" library="quadparts-nick" deviceset="MALE_HEADER_2POS" device="-2X1-0.1IN"/>
 <part name="J3" library="quadparts_prebuilt" deviceset="SIP-10_" device="TH-254X10"/>
@@ -4177,6 +4176,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <part name="GND40" library="quadparts_prebuilt" deviceset="BAT_GND" device=""/>
 <part name="SW2" library="quadparts_prebuilt" deviceset="PUSHBUTTON_" device="SMD-VERTICAL-1"/>
 <part name="GND42" library="quadparts_prebuilt" deviceset="GND" device=""/>
+<part name="GND35" library="quadparts_prebuilt" deviceset="BAT_GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -4266,7 +4266,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <instance part="GND34" gate="1" x="-96.52" y="10.16"/>
 <instance part="C23" gate="G$1" x="-129.54" y="38.1"/>
 <instance part="C24" gate="G$1" x="-91.44" y="27.94"/>
-<instance part="GND35" gate="1" x="-149.86" y="38.1"/>
 <instance part="GND36" gate="1" x="-91.44" y="17.78"/>
 <instance part="J2" gate="G$1" x="-119.38" y="-15.24" rot="R90"/>
 <instance part="J3" gate="G$1" x="-40.64" y="20.32"/>
@@ -4301,6 +4300,7 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <instance part="GND40" gate="1" x="-147.32" y="-20.32"/>
 <instance part="SW2" gate="G$1" x="-10.16" y="-129.54"/>
 <instance part="GND42" gate="1" x="2.54" y="-142.24"/>
+<instance part="GND35" gate="1" x="-149.86" y="38.1"/>
 </instances>
 <busses>
 </busses>
@@ -4467,11 +4467,6 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <pinref part="GND34" gate="1" pin="GND"/>
 <wire x1="-99.06" y1="20.32" x2="-96.52" y2="20.32" width="0.1524" layer="91"/>
 <wire x1="-96.52" y1="20.32" x2="-96.52" y2="12.7" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="C23" gate="G$1" pin="1"/>
-<pinref part="GND35" gate="1" pin="GND"/>
-<wire x1="-129.54" y1="40.64" x2="-149.86" y2="40.64" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C24" gate="G$1" pin="2"/>
@@ -5053,6 +5048,11 @@ This is the reduced ISP connector for AVR programming. Common on Arduino. This f
 <pinref part="D5" gate="G$1" pin="C"/>
 <wire x1="-149.86" y1="-12.7" x2="-147.32" y2="-17.78" width="0.1524" layer="91"/>
 <pinref part="GND40" gate="1" pin="BAT_GND"/>
+</segment>
+<segment>
+<pinref part="C23" gate="G$1" pin="1"/>
+<wire x1="-129.54" y1="40.64" x2="-149.86" y2="40.64" width="0.1524" layer="91"/>
+<pinref part="GND35" gate="1" pin="BAT_GND"/>
 </segment>
 </net>
 <net name="VBAT" class="2">
